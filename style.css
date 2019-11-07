@@ -63,7 +63,7 @@ font-size: 3rem;
 color: white;
 }
 
-.featured-bg h3{
+.feature-bg h3{
   color: white;
 }
 
@@ -83,8 +83,12 @@ color: white;
  padding:5%;
 }
 
+.fab{
+font-size: 2rem;
+}
+
 /* Background Images */
-.tree-pose-bg{
-  background-image: url("treepose.jpg");
+.bess-home-bg{
+  background-image: url("BessHome.jpg");
   min-height: 50vw;
   }
