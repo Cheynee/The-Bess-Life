@@ -23,6 +23,10 @@ body{
 header,footer,section{
 padding:2% 5%;
 }
+header:nth-child(2n),footer:nth-child(2n),section:nth-child(2n){
+  background-color:#D5B9B2;
+  color:white;
+}
 
 /* Typography */
 
@@ -55,10 +59,11 @@ span{
 .center{
   text-align: center;
 }
-.feature-bg{
+
+/* .feature-bg{
   background-color:#D5B9B2;
   color:white;
-}
+} */
 .feature-bg h2{
 font-size: 3rem;
 color: white;
@@ -66,12 +71,15 @@ color: white;
 .feature-bg h3{
   color: white;
 }
+.halfheight{
+min-height: 50vw;
+}
 
 [class*=bg]{
   background-position: center;
   background: cover;
   background-repeat: no-repeat;
-}
+  }
 
 .padding-2{
   padding: 2%;
@@ -86,11 +94,16 @@ color: white;
 /* Background Images */
 .bess-home-bg{
   background-image: url("BessHome.jpg");
-  min-height: 50vw;
   }
   .pose-1-bg{
     background-image: url("Pose1.jpg");
-    min-height: 50vw;
     }
   .pose-2-bg{
-    background-image: url("Besspose2.jpg");}
+    background-image: url("Besspose2.jpg");
+
+  }
+  .bowls-bg{
+    background-image: url("bowls.jfif")
+  }
+  .meditation-bg{
+  background-image: url("meditation.jfif")
