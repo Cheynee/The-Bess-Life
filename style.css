@@ -12,6 +12,7 @@
 margin: 0;
 }
 
+
 /* Big Elements */
 body{
   font-family: 'Laila', serif;
@@ -39,8 +40,8 @@ h2,h3{
   color: #A26769;
 }
 a{
-text-decoration: none;
-color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 span{
@@ -62,7 +63,6 @@ span{
 font-size: 3rem;
 color: white;
 }
-
 .feature-bg h3{
   color: white;
 }
@@ -81,10 +81,6 @@ color: white;
 }
  .padding-5{
  padding:5%;
-}
-
-.fab{
-font-size: 2rem;
 }
 
 /* Background Images */
