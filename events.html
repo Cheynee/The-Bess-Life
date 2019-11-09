@@ -2,13 +2,29 @@
 layout: default
 title: Events
 ---
-<!--  FIXED BANNER-->
+
 <section class="fixed-banner bessevent-bg grid-middle-center">
   <div>
     <h1>Events</h1>
   </div>
-  </section>
+</section>
 
 <section>
-  
+
+  {% for event in site.events %}
+  <a class="grid padding-2" href="{{event.url}}">
+    <div class="col-6 event-bg" style="background-image:url('{{event.featured_image}}')">
+    </div>
+
+    <div class="col-6 padding-2">
+      <h2>{{event.title}}</h2>
+      <p> {{event.date | date: "%-d %B %Y"}} </p>
+      <p>{{event.location}}</p>
+      <p> {{event.description}}</p>
+      <p class="button"> read more</p>
+
+    </div>
+  </a>
+  {% endfor %}
+
 </section>
