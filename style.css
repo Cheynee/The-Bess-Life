@@ -41,7 +41,6 @@ margin-bottom: 1rem;
 
 h1{
   font-weight: : 700;
-  color: #9684A1;
 }
 
 h2,h3{
@@ -273,7 +272,7 @@ margin: 2%;
 
 .mobile-show{
   display: none;
-}
+  }
 
 #size-indicator {
   background-color: yellow;
@@ -286,7 +285,7 @@ margin: 2%;
   #size-indicator {
     background-color: teal;
     color: white;
-  }
+      }
 }
 
 @media (min-width: 48em) {
