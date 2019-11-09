@@ -21,23 +21,38 @@
 
 <!-- BODY STARTS HERE -->
 <body>
+
+<!-- hamgburger menu -->
+  <div class="mobile-show burger-button">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+      </div>
+  <div class="burger-menu">
+    <a href="/">Home</a>
+    <a href="/>about">About</a>
+    <a href="/services">Services</a>
+    <a href="/>events">Events</a>
+    <a href="/>contact">Contact</a>
+  </div>
+
 <!-- HEADER STARTS HERE -->
   <header class="grid-middle">
     <h1 class="col-6">
       <a href="/"> The Bess Life</a>
     </h1>
 
-    <nav class="col-6 right">
-      <a class="padding-2"href="home"> home </a>
-      <a class="padding-2"href="about"> about</a>
-      <a class="padding-2"href="services">services</a>
-      <a class="padding-2"href="events">events</a>
-      <a class="padding-2"href="contact">contact</a>
+    <nav class="col-6 mobile-hide right">
+      <a class="padding-2"href="/"> home </a>
+      <a class="padding-2"href="/about"> about</a>
+      <a class="padding-2"href="/services">services</a>
+      <a class="padding-2"href="/events">events</a>
+      <a class="padding-2"href="/contact">contact</a>
     </nav>
 
   </header>
-    <!-- HEADER ENDS HERE -->
-      <section class="fixed-banner bessevent-bg grid-middle-center">
+  <!-- HEADER ENDS HERE -->
+  <section class="fixed-banner bessevent-bg grid-middle-center">
   <div>
     <h1>Events</h1>
   </div>
@@ -46,22 +61,8 @@
 <section>
 
   
-  <a class="grid padding-2" href="/events/fullmoon.html">
-    <div class="col-6 event-bg" style="background-image:url('/shape.jpg')">
-    </div>
-
-    <div class="col-6 padding-2">
-      <h2>Full Moon Ceremony</h2>
-      <p> 1 January 2019 </p>
-      <p>La Porte, Rosebery, Sydney</p>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p class="button"> read more</p>
-
-    </div>
-  </a>
-  
   <a class="grid padding-2" href="/events/soundhealing.html">
-    <div class="col-6 event-bg" style="background-image:url('/operahouse.jpg')">
+    <div class="col-6 event-bg" style="background-image:url('/images/operahouse.jpg')">
     </div>
 
     <div class="col-6 padding-2">
@@ -75,7 +76,7 @@
   </a>
   
   <a class="grid padding-2" href="/events/yoga.html">
-    <div class="col-6 event-bg" style="background-image:url('/grouppose.jpg')">
+    <div class="col-6 event-bg" style="background-image:url('/images/grouppose.jpg')">
     </div>
 
     <div class="col-6 padding-2">
@@ -88,13 +89,25 @@
     </div>
   </a>
   
+  <a class="grid padding-2" href="/events/fullmoon.html">
+    <div class="col-6 event-bg" style="background-image:url('/images/shape.jpg')">
+    </div>
+
+    <div class="col-6 padding-2">
+      <h2>Full Moon Ceremony</h2>
+      <p> 1 October 2020 </p>
+      <p>La Porte, Rosebery, Sydney</p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="button"> read more</p>
+
+    </div>
+  </a>
+  
 
 </section>
 
 
-      <!-- INSTAGRAM FEED -->
-      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/2c5e8d67dd5f5ab9af49568e76bf2615.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-
+  
       <!-- CONTACT FORM STARTS HERE -->
       
 <!-- CONTACT FORM ENDS HERE -->
@@ -129,3 +142,13 @@
     </section>
 
     <!-- FOOTER ENDS HERE -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- jquery -->
+
+<script type="text/javascript" src="main.js">
+
+</script>

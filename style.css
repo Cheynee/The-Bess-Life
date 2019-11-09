@@ -12,6 +12,9 @@
 margin: 0;
 }
 
+img{max-width: 100%;
+}
+
 
 /* Big Elements */
 body{
@@ -62,6 +65,10 @@ span{
 .fixed-banner{
   background-attachment: fixed;
 }
+.fixed-banner h1{
+  color: white;
+  font-size: 4rem;
+}
 
 /* .feature-bg{
   background-color:#D5B9B2;
@@ -106,31 +113,137 @@ min-height: 50vw;
 }
 /* Background Images */
 .bess-home-bg{
-  background-image: url("BessHome.jpg");
+  background-image: url("/images/BessHome.jpg");
   }
   .pose-1-bg{
-    background-image: url("Pose1.jpg");
+    background-image: url("/images/Pose1.jpg");
 
     }
   .pose-2-bg{
-    background-image: url("Besspose2.jpg");
+    background-image: url("/images/Besspose2.jpg");
 
   }
   .bowls-bg{
-    background-image: url("bowls.jfif")
+    background-image: url("/images/bowls.jfif")
   }
   .meditation-bg{
-  background-image: url("meditation.jfif")
+  background-image: url("/images/meditation.jfif")
 }
 
   .bessevent-bg{
-    background-image:url("bessevent.jpg");
+    background-image:url("/images/riseandshine.jpg");
     min-height: 100vh;
   }
 
-  input{
+  input, textarea {
     padding: 1%;
-    margin: 1%;
+    margin: 1% auto;
     border-radius: 7px;
-    border-color: #9684A1; 
-  }
+    border-color: #9684A1;
+    display: block;
+    width: 80%;
+
+}
+
+
+
+/* DES BURGER - CODEPEN */
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: green;
+  background-color:#383;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: -100vh;
+    left:0;
+    right: 0;
+    bottom: 100vh;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+  transition:1s;
+    align-content:space-around;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.burger-menu.active{
+  top:0;
+  bottom:0;
+}
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+/* media queries */
+
+.mobile-show{
+  display: none;
+}
+
+
+@media (max-width:768px) {
+  .mobile-show{
+  display: block;
+}
+  .mobile-hide{
+  display: none;}
+}

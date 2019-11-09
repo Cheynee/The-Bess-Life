@@ -21,39 +21,59 @@
 
 <!-- BODY STARTS HERE -->
 <body>
+
+<!-- hamgburger menu -->
+  <div class="mobile-show burger-button">
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+      </div>
+  <div class="burger-menu">
+    <a href="/">Home</a>
+    <a href="/>about">About</a>
+    <a href="/services">Services</a>
+    <a href="/>events">Events</a>
+    <a href="/>contact">Contact</a>
+  </div>
+
 <!-- HEADER STARTS HERE -->
   <header class="grid-middle">
     <h1 class="col-6">
       <a href="/"> The Bess Life</a>
     </h1>
 
-    <nav class="col-6 right">
-      <a class="padding-2"href="home"> home </a>
-      <a class="padding-2"href="about"> about</a>
-      <a class="padding-2"href="services">services</a>
-      <a class="padding-2"href="events">events</a>
-      <a class="padding-2"href="contact">contact</a>
+    <nav class="col-6 mobile-hide right">
+      <a class="padding-2"href="/"> home </a>
+      <a class="padding-2"href="/about"> about</a>
+      <a class="padding-2"href="/services">services</a>
+      <a class="padding-2"href="/events">events</a>
+      <a class="padding-2"href="/contact">contact</a>
     </nav>
 
   </header>
-    <!-- HEADER ENDS HERE -->
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
-  <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-  </fieldset>
-  <input type="submit" value="Submit">
-</form>
+  <!-- HEADER ENDS HERE -->
+  <section class="grid-middle">
+  <div class="col-6 padding-2">
+    <img src="images\shape.jpg">
+  </div>
+  <div class="col-6 padding-2">
+    <h1>Reach Out</h1>
+    <p>Interested in collaborating? </p>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+            <!-- <label for="full-name">First Name & Last Name</label> -->
+        <input type="text" name="name" id="full-name" placeholder="First & Last Name" required="">
+        <!-- <label for="email-address">Email Address</label> -->
+        <input type="email" name="_replyto" id="email-address" placeholder="Your Emaill Address"youremail@gmail.com" required="">
+        <!-- <label for="message">Message</label> -->
+        <textarea rows="5" name="message" id="message" placeholder="Your Message..." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</section>
 
 
-      <!-- INSTAGRAM FEED -->
-      <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/2c5e8d67dd5f5ab9af49568e76bf2615.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-
+  
       <!-- CONTACT FORM STARTS HERE -->
       
 <!-- CONTACT FORM ENDS HERE -->
@@ -88,3 +108,13 @@
     </section>
 
     <!-- FOOTER ENDS HERE -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- jquery -->
+
+<script type="text/javascript" src="main.js">
+
+</script>

@@ -1,6 +1,6 @@
 ---
 layout: default
-featured_image: /operahouse.jpg
+featured_image: /images/operahouse.jpg
 title: Sound Healing Workshop
 date: 2019-01-01
 location: The Opera House, Sydney
