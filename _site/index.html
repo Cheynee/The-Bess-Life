@@ -4,6 +4,11 @@
 <!-- HEAD STARTS HERE -->
   <head>
     <meta charset="utf-8">
+
+    <!-- Enable responsive design support -->
+    <!-- Check https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag for details -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title></title>
     <!-- GRINDLEX -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
@@ -53,16 +58,16 @@
   </header>
   <!-- HEADER ENDS HERE -->
   <!-- SPLIT BANNER STARTS HERE-->
-<section class=" banner grid feature-bg">
-  <div class="grid-center-middle col-6 center padding-5">
-    <div>
+<section class="banner grid feature-bg">
+  <div class="col-6-middle_sm-12">
+    <div class=" center padding-5">
       <h2> Elizabeth Wittingslow</h2>
       <h3> Living The Bess Life
       </h3>
     </div>
   </div>
 
-  <div class="col-6 halfheight bess-home-bg">
+  <div class="col-6_sm-12 halfheight bess-home-bg">
   </div>
 </section>
 <!-- SPLIT BANNER ENDS HERE -->
@@ -82,9 +87,7 @@
 <!-- ABOUT SECTION ENDS HERE -->
 
 <!-- TO DO INSTA FEED STARTS HERE -->
- <section class="feature-bg center">
-   <h1> @thebesslife</h1>
- </section>
+
 
 <!-- BODY FINISHES HERE -->
 </body>
@@ -92,11 +95,16 @@
 
 
   
-      <!-- INSTAGRAM FEED -->
+  <section class="center">
+    <h3> @thebesslife</h3>
 
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/b17dce487caa54038bdeb33c721da65a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      <!-- INSTAGRAM FEED -->
+      <!-- SnapWidget -->
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="https://snapwidget.com/embed/757910" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
       
       <!-- CONTACT FORM STARTS HERE -->
+    </section>
       
       <section class="center">
         <h2> Get in Touch</h2>
@@ -141,6 +149,7 @@
     </div>
 
     </section>
+    <p id="size-indicator">This is the size indicator</p>
 
     <!-- FOOTER ENDS HERE -->
 

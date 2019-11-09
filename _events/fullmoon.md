@@ -1,7 +1,7 @@
 ---
 layout: event
 featured_image: /images/shape.jpg
-featured_image_position: bottom
+featured_image_position: 50% 75%
 title: Full Moon Ceremony
 date: 2020-10-01
 location: La Porte, Rosebery, Sydney
@@ -11,6 +11,5 @@ included:
   - cacao ceremony
   - individual moon card reading  
 
-arrival: Please arrive at least 10 minutes before the start of the event. 
+arrival: Please arrive at least 10 minutes before the start of the event.
 ---
-

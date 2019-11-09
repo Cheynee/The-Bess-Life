@@ -3,7 +3,7 @@ layout: default
 title: Events
 ---
 
-<section class="fixed-banner bessevent-bg">
+<section class="fixed-banner bessevent-bg padding-0">
   <div class="grid-middle-center full-height overlay">
     <div>
       <h2>Events</h2>
@@ -15,14 +15,14 @@ title: Events
 
   {% for event in site.events %}
   <a class="grid padding-2" href="{{event.url}}">
-    <div class="col-6 event-bg" style="background-image:url('{{event.featured_image}}')">
+    <div class="col-6_sm-12 event-bg" style="background-image:url('{{event.featured_image}}');{% if event.featured_image_position %}background-position:{{event.featured_image_position}}{% endif %}">
     </div>
 
-    <div class="col-6 padding-2">
+    <div class="col-6_sm-12 padding-2">
       <h2>{{event.title}}</h2>
-      <p> {{event.date | date: "%-d %B %Y"}} </p>
-      <p>{{event.location}}</p>
-      <p> {{event.description}}</p>
+      <p> <strong> Date:</strong> {{event.date | date: "%-d %B %Y"}} </p>
+      <p> <strong> Location:</strong> {{event.location}}</p>
+      <p> <strong> The Event:</strong>{{event.description}}</p>
       <p class="button"> read more</p>
 
     </div>

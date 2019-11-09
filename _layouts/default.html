@@ -4,6 +4,11 @@
 <!-- HEAD STARTS HERE -->
   <head>
     <meta charset="utf-8">
+
+    <!-- Enable responsive design support -->
+    <!-- Check https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag for details -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title></title>
     <!-- GRINDLEX -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
@@ -55,11 +60,16 @@
   {{content}}
 
   {% if page.insta == true %}
-      <!-- INSTAGRAM FEED -->
+  <section class="center">
+    <h3> @thebesslife</h3>
 
-<!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/b17dce487caa54038bdeb33c721da65a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      <!-- INSTAGRAM FEED -->
+      <!-- SnapWidget -->
+      <script src="https://snapwidget.com/js/snapwidget.js"></script>
+      <iframe src="https://snapwidget.com/embed/757910" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
       {%endif%}
       <!-- CONTACT FORM STARTS HERE -->
+    </section>
       {% if page.form == true %}
       <section class="center">
         <h2> Get in Touch</h2>
@@ -104,6 +114,7 @@
     </div>
 
     </section>
+    <p id="size-indicator">This is the size indicator</p>
 
     <!-- FOOTER ENDS HERE -->
 

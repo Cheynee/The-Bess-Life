@@ -84,26 +84,26 @@ margin: 2%;
   }
 
 .feature-bg h2{
-font-size: 3rem;
-color: white;
+  font-size: 2rem;
+  color: white;
 }
+
 .feature-bg h3{
   color: white;
 
 }
 
 
-.overlay{ 
+.overlay{
   background-color: rgba(20,20,20, 0.35);
-  margin: none; 
-  
+
 }
-.full-height{ 
-  min-height: 100vh; 
+.full-height{
+  min-height: 100vh;
 }
 
 .halfheight{
-min-height: 50vh;
+  min-height: 30vh;
 }
 
 .quarter-height {
@@ -116,6 +116,9 @@ min-height: 50vh;
   background-repeat: no-repeat;
   }
 
+.padding-0{
+  padding: 0;
+}
 .padding-2{
   padding: 2%;
 }
@@ -157,7 +160,7 @@ min-height: 50vh;
     padding: 1%;
     margin: 1% auto;
     /* border-radius: 7px; */
-    border: none; 
+    border: none;
     border-bottom: 1px solid  #9684A1;
     background-color: rgba(0,0,0,0);
     display: block;
@@ -165,11 +168,11 @@ min-height: 50vh;
 }
 
 [type=submit]{
-  -webkit-appearance: none; 
-  background-color: white; 
-  width: 20%; 
+  -webkit-appearance: none;
+  background-color: white;
+  width: 20%;
   border: 1px solid  #9684A1;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .contact-form h1,.contact-form p{
@@ -272,6 +275,51 @@ min-height: 50vh;
   display: none;
 }
 
+#size-indicator {
+  background-color: yellow;
+  color: black;
+  display: none;
+}
+
+@media (min-width: 36em) {
+  /* CSS in here is for small and up */
+  #size-indicator {
+    background-color: teal;
+    color: white;
+  }
+}
+
+@media (min-width: 48em) {
+  /* CSS in here is for medium and up */
+  #size-indicator {
+    background-color: red;
+    color: white;
+  }
+
+  .feature-bg h2{
+    font-size: 3rem;
+  }
+
+  .halfheight{
+    min-height: 50vh;
+  }
+}
+
+@media (min-width: 64em) {
+  /* CSS in here is for large */
+  #size-indicator {
+    background-color: black;
+    color: white;
+  }
+
+  nav {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 80em) {
+  /* CSS in here is for extra-large */
+}
 
 @media (max-width:768px) {
   .mobile-show{
