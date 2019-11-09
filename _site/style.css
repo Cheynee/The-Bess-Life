@@ -22,7 +22,9 @@ body{
   font-weight:500;
   color: #2f3542;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 header,footer,section{
 padding:2% 5%;
 }
@@ -65,8 +67,8 @@ span{
 .fixed-banner{
   background-attachment: fixed;
 }
-.fixed-banner h1{
-  color: white;
+.fixed-banner h2{
+  color:#9684A1;
   font-size: 4rem;
 }
 
@@ -87,13 +89,25 @@ color: white;
 }
 .feature-bg h3{
   color: white;
+
 }
+
+
+.overlay{ 
+  background-color: rgba(20,20,20, 0.35);
+  margin: none; 
+  
+}
+.full-height{ 
+  min-height: 100vh; 
+}
+
 .halfheight{
-min-height: 50vw;
+min-height: 50vh;
 }
 
 .quarter-height {
-  min-height: 25vw;
+  min-height: 25vh;
 }
 
 [class*=bg]{
