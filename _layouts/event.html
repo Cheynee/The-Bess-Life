@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+
+<section class="grid">
+  <div class="col-6 featured-image bg padding-2"style="background-image:url({{page.featured_image}});background-position:{{page.featured_image_position}};"></div>
+  </div>
+
+  <div class="col-6 padding-2">
+      <h2>{{ page.title }}</h2>
+      <p><strong>Date:</strong> {{ page.date| date: "%-d %B %Y" }}</p>
+      <p><strong>Location:</strong> {{ page.location }}</p>
+      <p><strong>The Event:</strong> {{ page.description }}</p>
+      
+      {% if page.included %}
+      <h3>What's included</h3>
+      <ul>
+      {% for thing in page.included %}
+        <li>{{ thing }}</li>
+      {% endfor %}
+      </ul>
+      {% endif %}
+      
+      <h3>Arrival</h3>
+      <p>{{page.arrival}}
+
+      </p>
+      {{content}}
+      
+  </div>
+
+</section>
+
+<!--
+
+<div class="fixed-banner quarter-height bg" style="background-image:url({{page.featured_image}});background-position:{{page.featured_image_position}};">
+</div>
+
+<h1 style="color:red;">This is an h1</h1>
+
+<h2>{{ page.title }}</h2>
+<p><strong>Date:</strong> {{ page.date }}</p>
+<p><strong>Location:</strong> {{ page.location }}</p>
+<p><strong>The Event:</strong> {{ page.description }}</p>
+
+<h3>What's included</h3>
+
+<ul>
+{% for thing in page.included %}
+  <li>{{ thing }}</li>
+{% endfor %}
+</ul>
+
+<h3>Arrival</h3>
+<ul>{% for thing in page.arrival %}
+    {% endfor %}
+</ul>
+{{content}}
+
+-->

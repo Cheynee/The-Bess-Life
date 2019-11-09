@@ -92,6 +92,10 @@ color: white;
 min-height: 50vw;
 }
 
+.quarter-height {
+  min-height: 25vw;
+}
+
 [class*=bg]{
   background-position: center;
   background-size: cover;
@@ -138,11 +142,26 @@ min-height: 50vw;
   input, textarea {
     padding: 1%;
     margin: 1% auto;
-    border-radius: 7px;
-    border-color: #9684A1;
+    /* border-radius: 7px; */
+    border: none; 
+    border-bottom: 1px solid  #9684A1;
+    background-color: rgba(0,0,0,0);
     display: block;
     width: 80%;
+}
 
+[type=submit]{
+  -webkit-appearance: none; 
+  background-color: white; 
+  width: 20%; 
+  border: 1px solid  #9684A1;
+  border-radius: 8px; 
+}
+
+.contact-form h1,.contact-form p{
+    padding: 1%;
+    margin: 1% auto;
+    width: 80%;
 }
 
 
