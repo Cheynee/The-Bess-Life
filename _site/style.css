@@ -167,6 +167,7 @@ span{
   input, textarea {
     padding: 1%;
     margin: 1% auto;
+    margin-bottom: 1rem;
     /* border-radius: 7px; */
     border: none;
     border-bottom: 1px solid  #9684A1;
@@ -177,16 +178,25 @@ span{
 
 input[type=submit]{
   -webkit-appearance: none;
-  background-color: white;
+  background-color: none;
+  color: #A26769;
+  font-family: 'Laila', serif;
+  font-weight:700;
   width: 20%;
   border: 1px solid  #9684A1;
   border-radius: 8px;
+  box-shadow: 2px 2px white;
 }
 
 .contact-form h1,.contact-form p{
     padding: 1%;
-    margin: 1% auto;
+    /* margin: 1% auto; */
     width: 75%;
+}
+.contact-form input, .contact-form textarea{
+  margin: 0;
+  margin-bottom: 1rem;
+
 }
 
 /* input[type="submit" i] {  */
@@ -314,7 +324,13 @@ input[type=submit]{
   .halfheight{
     min-height: 50vh;
   }
+
+  .center form{
+  max-width: 55ch;
+  margin: auto;
 }
+}
+
 
 @media (min-width: 64em) {
   /* CSS in here is for large */
