@@ -5,7 +5,7 @@ layout: default
 
 <section class="grid">
   <div class="col-6_sm-12 featured-image bg padding-2"style="background-image:url({{page.featured_image}});background-position:{{page.featured_image_position}};"></div>
-  
+
   <div class="col-6_sm-12 padding-2">
       <h2>{{ page.title }}</h2>
       <p><strong>Date:</strong> {{ page.date| date: "%-d %B %Y" }}</p>
@@ -21,7 +21,7 @@ layout: default
       </ul>
       {% endif %}
 
-      <h3>Arrival</h3>
+      <h3 class="padding-1">Arrival</h3>
       <p>{{page.arrival}}
 
       </p>
