@@ -175,7 +175,7 @@ span{
     width: 80%;
 }
 
-[type=submit]{
+input[type=submit]{
   -webkit-appearance: none;
   background-color: white;
   width: 20%;
@@ -186,8 +186,11 @@ span{
 .contact-form h1,.contact-form p{
     padding: 1%;
     margin: 1% auto;
-    width: 80%;
+    width: 75%;
 }
+
+/* input[type="submit" i] {  */
+
 
 
 
